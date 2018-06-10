@@ -3,177 +3,184 @@ images1.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-explosion
+shadow
   rotate: false
   xy: 2, 2
+  size: 2560, 1440
+  orig: 2560, 1440
+  offset: 0, 0
+  index: -1
+explosion
+  rotate: false
+  xy: 2564, 2
   size: 640, 640
   orig: 640, 640
   offset: 0, 0
   index: -1
 botDestroy
   rotate: false
-  xy: 2, 644
+  xy: 2, 1444
   size: 560, 240
   orig: 560, 240
   offset: 0, 0
   index: -1
 bot
   rotate: false
-  xy: 644, 2
+  xy: 2, 1686
   size: 320, 160
   orig: 320, 160
   offset: 0, 0
   index: -1
 bomber
   rotate: false
-  xy: 644, 164
+  xy: 2, 1848
   size: 320, 160
   orig: 320, 160
   offset: 0, 0
   index: -1
 upgPanel
   rotate: false
-  xy: 2, 886
+  xy: 564, 1444
   size: 400, 100
   orig: 400, 100
   offset: 0, 0
   index: -1
 arrows
   rotate: false
-  xy: 564, 644
+  xy: 564, 1546
   size: 400, 100
   orig: 400, 100
   offset: 0, 0
   index: -1
 upgScore
   rotate: false
-  xy: 644, 326
+  xy: 324, 1686
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 upgRad
   rotate: false
-  xy: 644, 428
+  xy: 426, 1686
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 upgLife
   rotate: false
-  xy: 644, 530
+  xy: 324, 1788
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 upgHp
   rotate: false
-  xy: 746, 326
+  xy: 426, 1788
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 upArrow
   rotate: false
-  xy: 848, 326
+  xy: 324, 1890
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 rightArrow
   rotate: false
-  xy: 746, 428
+  xy: 426, 1890
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 leftArrow
   rotate: false
-  xy: 746, 530
+  xy: 564, 1648
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 downArrow
   rotate: false
-  xy: 848, 428
+  xy: 564, 1750
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 bombButton
   rotate: false
-  xy: 848, 530
+  xy: 564, 1852
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 simpleButton
   rotate: false
-  xy: 564, 746
+  xy: 966, 1444
   size: 320, 80
   orig: 320, 80
   offset: 0, 0
   index: -1
 hpBar
   rotate: false
-  xy: 564, 828
+  xy: 666, 1648
   size: 160, 80
   orig: 160, 80
   offset: 0, 0
   index: -1
 wall
   rotate: false
-  xy: 404, 886
+  xy: 564, 1954
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 key
   rotate: false
-  xy: 886, 746
+  xy: 828, 1648
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 grass
   rotate: false
-  xy: 564, 910
+  xy: 666, 1730
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 box
   rotate: false
-  xy: 726, 828
+  xy: 748, 1730
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 bonus
   rotate: false
-  xy: 726, 910
+  xy: 830, 1730
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 bomb
   rotate: false
-  xy: 808, 828
+  xy: 666, 1812
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 pause
   rotate: false
-  xy: 950, 326
+  xy: 666, 1894
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 menu
   rotate: false
-  xy: 950, 428
+  xy: 666, 1960
   size: 64, 64
   orig: 64, 64
   offset: 0, 0

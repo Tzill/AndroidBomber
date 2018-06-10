@@ -33,6 +33,7 @@ public class ScreenManager {
         return viewport;
     }
 
+
     private ScreenManager() {
     }
 
@@ -40,10 +41,12 @@ public class ScreenManager {
         this.game = game;
         this.batch = batch;
         this.camera = new OrthographicCamera(1280, 720);
+
         this.viewport = new FitViewport(1280, 720, camera);
         this.gameScreen = new GameScreen(batch, camera);
         this.menuScreen = new MenuScreen(batch);
         this.loadingScreen = new LoadingScreen(batch);
+
     }
 
     public void resize(int width, int height) {
@@ -74,7 +77,7 @@ public class ScreenManager {
                 gameScreen.setLoadStatus();
                 Assets.getInstance().loadAssets(ScreenType.GAME);
 
-                gameScreen.loadGame();
+                //gameScreen.loadGame();
                 break;
         }
     }

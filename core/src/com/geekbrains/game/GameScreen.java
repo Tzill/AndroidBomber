@@ -36,6 +36,10 @@ public class GameScreen implements Screen {
         PLAY, PAUSE, SHOP;
     }
 
+    public SpriteBatch getBatch() {
+        return batch;
+    }
+
     private SpriteBatch batch;
     private Map map;
     private Bomberman player;
@@ -102,6 +106,7 @@ public class GameScreen implements Screen {
             out.writeObject(bombEmitter);
             out.writeObject(map);
             out.writeObject(player);
+
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -126,6 +131,7 @@ public class GameScreen implements Screen {
             map.reloadResources();
             player.reloadResources(this);
             animationEmitter.reset();
+            Shadow.getInstance().init(this);
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
@@ -151,6 +157,7 @@ public class GameScreen implements Screen {
         botEmitter.render(batch);
         bombEmitter.render(batch);
         animationEmitter.render(batch);
+        Shadow.getInstance().render(batch);
         ScreenManager.getInstance().resetCamera();
         player.renderGUI(batch, guiFont);
         batch.end();
@@ -165,6 +172,7 @@ public class GameScreen implements Screen {
         map.loadMap(mapName);
         player.startNewLevel();
         loadStatus = false;
+        Shadow.getInstance().init(this);
     }
 
     public void update(float dt) {

@@ -14,9 +14,7 @@ import java.io.Serializable;
 public class Bomberman implements Serializable {
     public enum State {
         IDLE(0), MOVE(1);
-
         private int animationIndex;
-
         State(int animationIndex) {
             this.animationIndex = animationIndex;
         }
@@ -85,6 +83,7 @@ public class Bomberman implements Serializable {
     public Bomberman(GameScreen gs) {
         this.gs = gs;
         this.position = new Vector2(0.0f, 0.0f);
+        Shadow.getInstance().update(position);
         this.velocity = new Vector2(0.0f, 0.0f);
         this.speed = 200.0f;
         this.pathCounter = -1;
@@ -167,6 +166,7 @@ public class Bomberman implements Serializable {
     }
 
     public void update(float dt) {
+
         animations[currentState.animationIndex].update(dt);
         if (!isVulnerable()) {
             damagedTimer -= dt;
